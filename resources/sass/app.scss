@@ -5,4 +5,6 @@
 @import 'variables';
 
 // Bootstrap
+// Bootstrap was already setted up by default when the command: composer create-project --prefer-dist laravel/laravel SendFox was runned
+// for use it only is necessary run npm install in the root of the project.
 @import '~bootstrap/scss/bootstrap';
