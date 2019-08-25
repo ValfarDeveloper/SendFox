@@ -13,4 +13,8 @@ const mix = require('laravel-mix');
 
 mix.react('resources/js/app.js', 'public/js')
    .react('resources/js/components/HomeContent.js', 'public/js/components')
-   .sass('resources/sass/app.scss', 'public/css');
+   .react('resources/js/components/MailTemplateForm.js', 'public/js/components')
+   .sass('resources/sass/app.scss', 'public/css')
+   .sass('resources/sass/components/Card.scss', 'public/css/components')
+   .sass('resources/sass/components/MailTemplateForm.scss', 'public/css/components')
+   .sass('resources/sass/components/HomeContent.scss', 'public/css/components');

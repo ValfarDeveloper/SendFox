@@ -18,3 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+//CRUD operations for Mail Templates
+Route::resource('mail-templates', 'MailTemplateController');

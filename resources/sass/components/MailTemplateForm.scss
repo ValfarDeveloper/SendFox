@@ -1,0 +1,21 @@
+@import './DraftJsInput/BlockControl.scss';
+@import './DraftJsInput/DraftInput.scss';
+@import './DraftJsInput/StyleButton.scss';
+
+.subject-input{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 100%;
+}
+
+.template-title{
+    font-family: "Georgia", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

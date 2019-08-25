@@ -23,6 +23,21 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $javascriptIndexVars = $this->getIndexJavascriptVars();
+        
+        return view('content.home', [
+            'javascriptBackVars' => $javascriptIndexVars
+        ]);
+    }
+
+    /**
+     * Get all the javascript variables used by the frontend in the index route
+     * @return array
+     */
+    private function getIndexJavascriptVars(){
+        return [
+            'createMailTemplateRoute' => route('mail-templates.create'),
+            'indexMailTemplatesRoute' => route('mail-templates.index'),
+        ];
     }
 }
