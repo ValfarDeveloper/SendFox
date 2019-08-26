@@ -24,7 +24,11 @@ class MailTemplateController extends Controller
      */
     public function index()
     {
-        return "";
+        $mailTemplates = EmailTemplate::paginate(10);
+
+        return view('content.mailTemplates.mailTemplates', [
+            'mailTemplates' => $mailTemplates
+        ]);
     }
 
     /**

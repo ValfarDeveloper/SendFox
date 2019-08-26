@@ -1,0 +1,28 @@
+#mail-templates{
+    padding: 50px;
+
+    .table-row{
+        border-bottom: 1px solid gray;
+        padding: 20px 0;
+
+        .header-column{
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .mobile-column-title{
+            font-size: 15px;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .vertical-centered-column{
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    .pagination{
+        margin: 30px 0px;
+    }
+}

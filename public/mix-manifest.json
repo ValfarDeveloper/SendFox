@@ -1,9 +1,11 @@
 {
     "/js/app.js": "/js/app.js",
+    "/js/components/HomeContent.js": "/js/components/HomeContent.js",
+    "/js/components/MailTemplateForm.js": "/js/components/MailTemplateForm.js",
+    "/js/content/mailTemplates/mailTemplates.js": "/js/content/mailTemplates/mailTemplates.js",
     "/css/app.css": "/css/app.css",
     "/css/components/Card.css": "/css/components/Card.css",
     "/css/components/MailTemplateForm.css": "/css/components/MailTemplateForm.css",
     "/css/components/HomeContent.css": "/css/components/HomeContent.css",
-    "/js/components/HomeContent.js": "/js/components/HomeContent.js",
-    "/js/components/MailTemplateForm.js": "/js/components/MailTemplateForm.js"
+    "/css/content/mailTemplates/mailTemplates.css": "/css/content/mailTemplates/mailTemplates.css"
 }
