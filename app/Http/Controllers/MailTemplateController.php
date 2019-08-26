@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\EmailTemplate;
 
 class MailTemplateController extends Controller
 {
@@ -33,7 +34,11 @@ class MailTemplateController extends Controller
      */
     public function create()
     {
-        return view("content.mailTemplates.createMailTemplate");
+        $javascriptCreateVars = $this->getCreateJavascriptVars();
+
+        return view('content.mailTemplates.createMailTemplate', [
+            'javascriptBackVars' => $javascriptCreateVars
+        ]);
     }
 
     /**
@@ -44,7 +49,14 @@ class MailTemplateController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $requestData = $request->all();
+        $dataToSave = [
+            'subject' => $requestData['emailTemplateSubject'],
+            'body' => json_encode($requestData['emailTemplateBody'])
+        ];
+        $savedEmailTemplate = EmailTemplate::create($dataToSave);
+
+        return response()->json($savedEmailTemplate);
     }
 
     /**
@@ -90,5 +102,15 @@ class MailTemplateController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    /**
+     * Get all the javascript variables used by the frontend in the create route
+     * @return array
+     */
+    private function getCreateJavascriptVars(){
+        return [
+            'storeMailTemplateRoute' => route('mail-templates.store')
+        ];
     }
 }

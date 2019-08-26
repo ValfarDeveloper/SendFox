@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 class ControlButton extends Component {
-    mouseDownHandler(e) {
+    handlerMouseDown(e) {
         e.preventDefault();
         this.props.onToggle(this.props.style);
     }
@@ -14,7 +14,7 @@ class ControlButton extends Component {
         }
 
         return (
-            <span className={className} onMouseDown={this.mouseDownHandler.bind(this)}>
+            <span className={className} onMouseDown={this.handlerMouseDown.bind(this)}>
                 {this.props.label}
             </span>
         );
