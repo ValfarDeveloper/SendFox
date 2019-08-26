@@ -1,0 +1,28 @@
+.alerts-container{
+    bottom: 0;
+    position: fixed; 
+    right: 0;
+    width: 300px;
+    z-index: 1;
+
+    .system-alert{
+        margin-bottom: 15px;
+        animation: fadein 2s;
+
+        .alert-header-container{
+            display: flex;
+            justify-content: space-between;
+
+            .alert-title-container{
+                align-items: center;
+                display: flex;
+                width: 100%;
+            }
+
+            .alert-close-btn{
+                background-color: transparent;
+                border: 0px;
+            }
+        }
+    }
+}
