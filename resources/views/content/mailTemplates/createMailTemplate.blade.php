@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="justify-content-center">
-    <div id="create-mail-template"></div>
+<div id="create-mail-template" class="d-flex justify-content-center align-items-center h-100">
 </div>
 @endsection
 

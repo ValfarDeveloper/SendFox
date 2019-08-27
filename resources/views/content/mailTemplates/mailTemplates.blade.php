@@ -2,36 +2,13 @@
 
 @section('content')
 <div class="justify-content-center">
-    <div id="mail-templates">
-        <div class="row table-row d-none d-md-flex">
-            <div class="col-12 col-md-1 header-column">
-                Id
-            </div>
-            <div class="col-12 col-md-4 header-column">
-                Subject
-            </div>
-            <div class="col-12 col-md-7 header-column">
-                Body
-            </div>
-        </div>
+    <div id="mail-templates" class="d-flex align-items-center flex-column">
         @foreach($mailTemplates as $mailTemplate)
-            <div class="row table-row">
-                <div class="col-12 col-md-1 vertical-centered-column">
-                    <span class="d-block d-md-none mobile-column-title">
-                        Id:
-                    </span>
-                    {{ $mailTemplate->id }}
-                </div>
-                <div class="col-12 col-md-4 vertical-centered-column">
-                    <span class="d-block d-md-none mobile-column-title">
-                        Subject:
-                    </span>
-                    {{ $mailTemplate->subject }}
-                </div>
-                <div class="body col-12 col-md-7" data-body="{{ $mailTemplate->body }}">
-                    <div class="d-flex d-md-none mobile-column-title">
-                        Body:
-                    </div>
+            <div class="card mail-template mb-5">
+                <div class="card-body">
+                    <h4 class="card-title">Subject: {{ $mailTemplate->subject }}</h4>
+                    <h5 class="card-subtitle mb-2 text-muted">Id: {{ $mailTemplate->id }}</h5>
+                    <div class="card-text body" data-body="{{ $mailTemplate->body }}"></div>
                 </div>
             </div>
         @endforeach

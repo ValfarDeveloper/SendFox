@@ -1,24 +1,21 @@
+@import '../../variables';
+
 #mail-templates{
-    padding: 50px;
+    @include lg(){
+        padding: 50px;
+    }
 
-    .table-row{
-        border-bottom: 1px solid gray;
-        padding: 20px 0;
+    .mail-template{
+        width: 90%;
 
-        .header-column{
-            font-size: 18px;
-            font-weight: bold;
+        @include lg(){
+            width: 50%;
         }
 
-        .mobile-column-title{
-            font-size: 15px;
-            font-weight: bold;
-            margin-right: 15px;
-        }
-
-        .vertical-centered-column{
-            align-items: center;
-            display: flex;
+        .body{
+            background-color: #EEEEFA;
+            border-radius: 5px;
+            padding: 40px;
         }
     }
 

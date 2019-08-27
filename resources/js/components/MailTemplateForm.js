@@ -128,8 +128,8 @@ class MailTemplateForm extends Component {
         return (
             <>
                 <SystemAlerts alerts={this.state.alerts} />
-                <div className="row justify-content-center">
-                    <div className="col-10 col-xl-6">
+                <div className="row justify-content-center mail-template-form-container">
+                    <div className="col-12">
                         <Card className="mail-template-form">
                             <div className="template-title">Subject</div>
 
@@ -142,23 +142,23 @@ class MailTemplateForm extends Component {
                                 className="subject-input"
                                 name="subject" 
                                 onChange={this.handlerChangeSubject}
-                                placeholder="Write the subject of your template here..."
+                                placeholder="Write here the subject of your template here..."
                                 type="text"
                                 value={this.state.subject} />
-                            <div className="template-title">Body</div>
 
                             {this.state.errors.body !== "" ? (
                                 <div className="text-danger">
                                     {this.state.errors.body}
                                 </div> ) : ""}
 
+                            <div className="template-title">Body</div>
                             <DraftInput 
                                 editorState={this.state.bodyContent} 
                                 onChange={this.handlerChangeBody} 
-                                placeholder="Write the body of your template here..."/>
+                                placeholder="Write here the body of your template here..."/>
 
                             <div className="row justify-content-end p-4">
-                                <button className="btn btn-success px-5" onClick={this.handlerSaveClick}>
+                                <button className="btn btn-save px-5" onClick={this.handlerSaveClick}>
                                     {this.state.isSaving ? (<FontAwesomeIcon icon={faSpinner} spin />) : "Save"}
                                 </button>
                             </div>
