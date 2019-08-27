@@ -1,1 +1,10 @@
 @import './Card.scss';
+@import '../variables';
+
+.links-container{
+    width: 90%;
+
+    @include md(){
+        width: 50%;
+    }
+}

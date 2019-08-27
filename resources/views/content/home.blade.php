@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="justify-content-center">
-    @if (session('status'))
-        <div class="alert alert-success" role="alert">
-            {{ session('status') }}
+    <div class="justify-content-center h-100">
+        @if (session('status'))
+            <div class="alert alert-success" role="alert">
+                {{ session('status') }}
+            </div>
+        @endif
+        <div id="home-content" class="d-flex justify-content-center h-100">
         </div>
-    @endif
-    <div id="home-content">
     </div>
-</div>
 @endsection
 
 @push('styles')

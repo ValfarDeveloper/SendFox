@@ -1,3 +1,31 @@
+@import '../variables';
+
 .home-cards{
     width: 100%;
+
+    .card-body{
+        display: flex;
+        justify-content: center;
+
+        .icon-container{
+            height: 35%;
+    
+            .icon{
+                color: #4e54c8;
+                font-size: 80px;
+            }
+    
+            .icon-text{
+                color: #4e54c8;
+                font-family: 'Nunito';
+                font-size: 20px;
+                font-weight: bold;
+                margin: 15px 0px;
+
+                @include lg(){
+                    font-size: 25px;
+                }
+            }
+        }
+    }
 }
