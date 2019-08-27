@@ -1,4 +1,4 @@
-# SendFox (current version 0.0.1)
+# SendFox (current version 0.0.2)
 
 SendFox is an application example of how work with Laravel and React. Basically with it you can create email templates using Draft.js. The application was built following these requirements:
 
@@ -109,7 +109,8 @@ php artisan serve
 ## Important notes
 * If you use the default mysql instance configured in freesqldatabase.com, you'll see that the application will have a delay of 7 seconds aprox. of delay per load. This is because we're using a free hosting service for the database.
 * The site is completely responsive.
-* Here a video of the website flow: https://youtu.be/mjPWa11kV24
+* Here a video of the website flow for the version 0.0.1: https://youtu.be/mjPWa11kV24
+* Here a video of the website flow for the version 0.0.2 with the new design: https://www.youtube.com/watch?v=zKJG1NT3d6k
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
