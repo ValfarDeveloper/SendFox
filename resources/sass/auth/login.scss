@@ -1,0 +1,61 @@
+.login-container{
+    height: 80%;
+
+    .logo-container{
+        height: 35%;
+
+        .logo{
+            color: #4e54c8;
+            font-size: 80px;
+        }
+
+        .logo-text{
+            color: #4e54c8;
+            font-family: 'Nunito';
+            font-size: 25px;
+            font-weight: bold;
+            margin: 15px 0px;
+        }
+    }
+
+    .login-form{
+        .form-input{
+            border: 0px;
+            border-bottom: 1px solid #4e54c8;
+            border-radius: 0px;
+            color: #4e54c8;
+            width: 100%;
+        }
+
+        .form-input::placeholder,
+        .form-check-label{
+            color: #4e54c8;
+        }
+
+        .form-check-label{
+            font-weight: bold;
+        }
+
+        .checkbox-remember-me{
+            -webkit-appearance: none;
+            background-color: #fafafa;
+            border: 1px solid #4e54c8;
+            display: inline-block;
+            height: 25px;
+            margin-right: 10px;
+            position: relative;
+            width: 25px;
+
+            &:checked:after{
+                content: url('data:image/svg+xml; utf8, <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z"/></svg>');
+                position: absolute;
+            }
+        }
+
+        .login-btn{
+            background-color: #4e54c8;
+            color: white;
+            width: 35%;
+        }
+    }
+}

@@ -8,3 +8,21 @@
 // Bootstrap was already setted up by default when the command: composer create-project --prefer-dist laravel/laravel SendFox was runned
 // for use it only is necessary run npm install in the root of the project.
 @import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import './animatedBackground.scss';
+
+//Main app styles
+.navbar{
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+    }
+}
+
+.main-content-container{
+    height: 90%;
+    position: relative;
+}

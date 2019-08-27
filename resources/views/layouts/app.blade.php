@@ -18,8 +18,8 @@
     @stack('styles')
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <div id="app" class="area">
+        <nav class="navbar navbar-expand-md navbar-light">
             <a class="navbar-brand" href="{{ url('/') }}">
                 {{ config('app.name', 'Laravel') }}
             </a>
@@ -68,9 +68,21 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="main-content-container">
             @yield('content')
         </main>
+        <ul class="background-shapes circles mb-0">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
     <script src="{{ mix('js/app.js') }}"></script>
     <script>

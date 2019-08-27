@@ -1,0 +1,41 @@
+.register-container{
+    height: 80%;
+
+    .logo-container{
+        height: 35%;
+
+        .logo{
+            color: #4e54c8;
+            font-size: 80px;
+        }
+
+        .logo-text{
+            color: #4e54c8;
+            font-family: 'Nunito';
+            font-size: 25px;
+            font-weight: bold;
+            margin: 15px 0px;
+        }
+    }
+
+    .register-form{
+        .form-input{
+            border: 0px;
+            border-bottom: 1px solid #4e54c8;
+            border-radius: 0px;
+            color: #4e54c8;
+            width: 100%;
+        }
+
+        .form-input::placeholder,
+        .form-check-label{
+            color: #4e54c8;
+        }
+
+        .register-btn{
+            background-color: #4e54c8;
+            color: white;
+            width: 35%;
+        }
+    }
+}
